@@ -1,0 +1,13 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.instructions {
+    margin-left: 50px;
+    text-align: left;
+}
