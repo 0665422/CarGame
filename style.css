@@ -8,6 +8,43 @@ h1 {
 }
 
 .instructions {
-    margin-left: 50px;
+    width: 310px;
+    display: inline-block;
+    padding: 15px 30px;
     text-align: left;
+    background-color: #A40F0C;
+    color: white;
+    border-radius: 20px;
+}
+
+.specs {
+    font-size: 24px;
+    width: 310px;
+    display: inline-block;
+    float: right;
+    padding: 35px 30px;
+    text-align: left;
+    background-color: #4B4947;
+    color: white;
+    border-radius: 20px;
+}
+
+.info {
+    display: block;
+    width: 60%;
+    margin: 60px auto 30px auto;
+}
+
+#make,
+#model,
+#color,
+#mileage,
+#status {
+    display: inline;
+}
+
+img {
+    border-radius: 10px;
+    display: block;
+    margin: auto;
 }

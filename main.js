@@ -1,7 +1,7 @@
 // VARIABLES
 const car = {
-    make: 'Tesla',
-    model: 'Roadster',
+    make: 'Lamborghini',
+    model: 'Veneno',
     color: 'red',
     mileage: 0,
     isWorking: true,
@@ -34,12 +34,19 @@ const car = {
 // Logs all of our car's current stats to the console
 
 reWriteStats = () => {
-    console.log(`Make: ${car.make}`);
-    console.log(`Model: ${car.model}`);
-    console.log(`Color: ${car.color}`);
-    console.log(`Mileage: ${car.mileage}`);
-    console.log(`Working?: ${car.isWorking}`);
-    console.log(`------------------------`);
+    document.getElementById("make").innerHTML = `${car.make}`;
+    document.getElementById("model").innerHTML = `${car.model}`;
+    document.getElementById("color").innerHTML = `${car.color}`;
+    document.getElementById("mileage").innerHTML = `${car.mileage}`;
+
+    let status;
+
+    if (car.isWorking === true) {
+        status = `working`;
+    } else {
+        status = `broken`;
+    }
+    document.getElementById("status").innerHTML = `${status}`;
 }
 
 
